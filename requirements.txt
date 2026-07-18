@@ -2,5 +2,5 @@ streamlit
 requests
 fastapi
 uvicorn
-google-generativeai
+groq
 pypdf
