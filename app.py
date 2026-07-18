@@ -144,7 +144,7 @@ if uploaded_file is not None and jd_input:
                 """
                 
                 # 🤖 Running Gemini Model
-                model = genai.GenerativeModel("gemini-2.5-flash")
+                model = genai.GenerativeModel("gemini-2.0-flash")
                 response = model.generate_content(system_prompt)
                 analysis_text = response.text
                 
