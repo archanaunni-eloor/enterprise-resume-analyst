@@ -143,8 +143,10 @@ if uploaded_file is not None and jd_input:
                 {resume_text}
                 """
                 
+                
+
                 # 🤖 Running Gemini Model
-                model = genai.GenerativeModel("gemini-1.5-flash")
+                model = genai.GenerativeModel("models/gemini-2.0-flash") # 👈 ഇതും പരീക്ഷിക്കാവുന്നതാണ്
                 response = model.generate_content(system_prompt)
                 analysis_text = response.text
                 
